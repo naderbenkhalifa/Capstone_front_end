@@ -1,0 +1,69 @@
+
+        
+       
+<h1>List Of Foods:</h1>
+&nbsp;
+<div class="container table">
+    
+    
+    <table class=" table bg-primary">
+       
+            <tr>
+                <th>Food Id</th>
+                <th>Food Name</th>
+                <th>Description</th>
+                <th>Availability</th>
+                <th>Price</th>
+                <th>Avatar</th>
+            </tr>
+        
+        
+            <tr *ngFor= "let food of foodsList">
+                <th>{{food.id}}</th>
+                <td>{{food.foodName}}</td>
+                <td>{{food.description}}</td>
+                <td>{{food.availability}}</td>
+                <td>{{food.price}}</td>
+               
+                <td><img alt="{{food.foodName}}'s image" style="width: 200px; height: 200px;" [src]="food.avatar"/></td>
+                <button class="btn btn-primary" (click)="addToCart(food)">Add to Cart</button>
+              </tr>
+        
+    </table>
+</div>
+&nbsp;
+
+<!--<h1>Cart</h1>
+<table class="table table-striped">
+    <tbody>
+      <tr>
+        <th>Id</th>
+        <th>foodName</th>
+        <th>Price</th>
+        
+        
+     
+     
+        
+        
+      </tr>
+      <tr *ngFor="let food of cartItemList" >
+        <td>{{food.id}}</td>
+        <td>{{food.foodName}}</td>
+        <td>{{food.price}}</td>
+        
+        
+     
+     
+        
+        
+      </tr>
+      </tbody>
+    </table>
+    <div class="row">
+        <div class="col-md-9">Total price</div>
+        <div class="col-md-3">{{totalPrice}}</div>
+
+    </div>-->
+      
+<h4><a routerLink="/loginsuccess" class="nav-link">Back</a></h4>

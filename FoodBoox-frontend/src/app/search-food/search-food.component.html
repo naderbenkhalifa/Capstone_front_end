@@ -1,0 +1,16 @@
+
+
+
+  <div class="container">
+    <h4><a routerLink="/loginsuccess" class="nav-link">Back</a></h4>
+      <h2>Enter ID to Search Food:</h2>
+    <input type="text" class="form-control" placeholder=" Food ID" [(ngModel)]='id'>
+  
+    &nbsp;
+    <div>  
+    <button class="btn btn-primary" type="button" (click)='getFoodById(id)'>Search Food</button>
+    
+    </div>
+  </div>
+   
+ 

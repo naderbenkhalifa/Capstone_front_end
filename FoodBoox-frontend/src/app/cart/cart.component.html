@@ -1,0 +1,37 @@
+<h1><p class="exemple">Cart</p></h1>
+<table class="table table-striped">
+    <tbody>
+      <tr>
+        <th>Id</th>
+        <th>foodName</th>
+        <th>Price</th>
+        
+        
+     
+     
+        
+        
+      </tr>
+      <tr *ngFor="let food of cartItemList" >
+        <td>{{food.id}}</td>
+        <td>{{food.foodName}}</td>
+        <td>{{food.price}}</td>
+        
+        
+     
+     
+        
+        
+      </tr>
+      </tbody>
+    </table>
+    <div class="row">
+        <div class="col-md-9"><strong>Total price</strong></div>
+        <div class="col-md-3">{{totalPrice}}</div>
+
+    </div>
+    <div class="modal-footer d-flex justify-content-center">
+        <button data-dismiss="modal" class="btn btn-default" (click)="purchaseFood()">to purchase</button>
+    </div>
+    <h4><a routerLink="/foodsList" class="nav-link">Back</a></h4>
+      

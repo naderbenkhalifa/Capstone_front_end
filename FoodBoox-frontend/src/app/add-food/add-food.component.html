@@ -1,0 +1,18 @@
+
+
+<div class="container">
+    <h4><a routerLink="/loginsuccess" class="nav-link">Back</a></h4>
+    <h2>Food details to add:</h2>
+    <!-- <input type="text" class="form-control" placeholder="Enter Product ID" [(ngModel)]='shoes.productId'> -->
+    <input type="text" class="form-control" placeholder=" Food Name" [(ngModel)]='food.foodName'>
+    <input type="text" class="form-control" placeholder=" Food description" [(ngModel)]='food.description'>
+    <!-- <input type="text" class="form-control" placeholder="Enter Food Quantity" [(ngModel)]='food.qty'> -->
+    <input type="text" class="form-control" placeholder=" Food Availability" [(ngModel)]='food.availability'>
+    <input type="text" class="form-control" placeholder=" Food Price" [(ngModel)]='food.price'>
+    <input type="url" class="form-control" placeholder=" Food Image" [(ngModel)]='food.avatar'>
+    &nbsp;
+    <div>
+
+    <button class="btn btn-primary" type="button" (click)='addFood()'>Add Food </button>
+</div>
+</div>

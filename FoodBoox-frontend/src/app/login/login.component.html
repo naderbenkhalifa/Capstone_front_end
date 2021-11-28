@@ -1,0 +1,27 @@
+
+
+  
+  <form>
+    
+    
+    <h1>Admin login </h1>
+    <div class="mb-3" >
+      <label for="email" class="form-label">Email address:</label>
+      <input type="email" class="form-control"   placeholder="Enter  email" name="email" [(ngModel)]="user.emailid" >
+ 
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Password:</label>
+      <input type="password" class="form-control" placeholder="Enter  password" name="pwd" [(ngModel)]="user.pwd" >
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)='loginUser()'>Login</button>
+  </form>
+  <small class="btn btn-primary float-right"  [routerLink]="['/registration']"> Register here</small>
+
+
+
+
